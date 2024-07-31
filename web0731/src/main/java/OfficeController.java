@@ -16,7 +16,7 @@ import model.SupplierDAO;
 public class OfficeController {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getAllSupplier() {
+	public Response getAllOffice() {
 		OfficeDAO dao = new OfficeDAO();
 		List<Office> f = dao.getAll();
 		if(f!=null && f.size()>0)
